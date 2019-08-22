@@ -28,7 +28,7 @@ try:
     font18 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 18)
 
     # Drawing on the Horizontal image
-    logging.info("1.Drawing on the Horizontal image... {epd.height} x {epd.width}")
+    logging.info(f"1.Drawing on the Horizontal image... {epd.height} x {epd.width}")
     Himage = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame
     draw = ImageDraw.Draw(Himage)
     draw.text((10, 0), 'hello world', font=font24, fill=0)
